@@ -20,7 +20,7 @@ public class MainController {
     }
     
     @GetMapping("/api")
-    public String index(@RequestHeader("User-Agent") String apiVersion) {
+    public String api(@RequestHeader("User-Agent") String apiVersion) {
         logger.info("Received a request for API version " + apiVersion);
         return "Something went wrong!";
     }
